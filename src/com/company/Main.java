@@ -15,7 +15,7 @@ public class Main {
             System.out.println("Enter student mark");
             int studentTotal = input.nextInt();
 
-            if (studentTotal > paperTotal || studentTotal < 0) {
+            if (studentTotal > paperTotal && studentTotal < 0) {
                 System.out.println("Please input a valid mark");
             }
 
