@@ -19,7 +19,7 @@ public class Main {
                 System.out.println("Please input a valid mark");
             }
 
-            if (studentTotal >= (paperTotal * 0.80)) {
+            if (studentTotal >= (paperTotal * 0.80) && studentTotal < paperTotal) {
                 System.out.println("This students grade is A");
             }
             else if (studentTotal >= (paperTotal * 0.70) && studentTotal <= (paperTotal * 0.79)) {
@@ -34,7 +34,7 @@ public class Main {
             else if (studentTotal >= (paperTotal * 0.40) && studentTotal <= (paperTotal * 0.49)) {
                 System.out.println("This students grade is E");
             }
-            else if (studentTotal < (paperTotal * 0.40)) {
+            else if (studentTotal < (paperTotal * 0.40) && studentTotal > 0) {
                 System.out.println("This students grade is U");
             }
 
